@@ -34,11 +34,12 @@ public class FirstActivity extends AppCompatActivity {
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                String selectedYear = yearList.get(position);
+            String selectedYear = yearList.get(position);
 
-                // start the SecondActivity
-                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
-                startActivity(intent);
+            // start the SecondActivity
+            Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+            intent.putExtra("selectedYear", selectedYear);
+            startActivity(intent);
             }
         });
 

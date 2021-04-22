@@ -3,14 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    tools:context="com.myapplicationdev.android.tw_listview.FirstActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="DMSD Course Structure"
-        android:layout_marginLeft="20dp"
-        android:textSize="30dp" />
+        android:textSize="25dp"
+        android:layout_marginLeft="10dp"/>
 
     <ListView
         android:id="@+id/lvYear"
