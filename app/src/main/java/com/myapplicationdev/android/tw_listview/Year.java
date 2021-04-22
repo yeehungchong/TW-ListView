@@ -1,11 +1,11 @@
 package com.myapplicationdev.android.tw_listview;
 
 public class Year {
-    public String year;
-    public String module;
+    private String year;
+    private String module;
+
     public Year(String year){
         this.year = year;
-
     }
 
     public String getYear(){
