@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="vertical">
     tools:context="com.myapplicationdev.android.tw_listview.FirstActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="  DMSD Course Structure"
-        android:textSize="30sp" />
+        android:text="DMSD Course Structure"
+        android:layout_marginLeft="20dp"
+        android:textSize="30dp" />
 
     <ListView
         android:id="@+id/lvYear"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
 
 </LinearLayout>
