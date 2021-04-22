@@ -13,8 +13,8 @@ import java.util.ArrayList;
 public class FirstActivity extends AppCompatActivity {
 
     ListView lv;
-    ArrayList<String> SelectionList;
-    ArrayAdapter<String> aaSelection;
+    ArrayList<String> yearList;
+    ArrayAdapter<String> aaYear;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,20 +23,22 @@ public class FirstActivity extends AppCompatActivity {
 
         lv = findViewById(R.id.lvYear);
 
-        SelectionList = new ArrayList();
-        SelectionList.add("Secular");
+        yearList = new ArrayList();
+        yearList.add("Year 1");
+        yearList.add("Year 2");
+        yearList.add("Year 3");
 
-        aaSelection = new ArrayAdapter(this, android.R.layout.simple_list_item_1, SelectionList);
-        lv.setAdapter(aaSelection);
+        aaYear = new ArrayAdapter(this, android.R.layout.simple_list_item_1, yearList);
+        lv.setAdapter(aaYear);
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-            String selectionType = SelectionList.get(position);
+            String selectedYear = yearList.get(position);
 
             // start the SecondActivity
             Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
-            intent.putExtra("selectionType", selectionType);
+            intent.putExtra("selectedYear", selectedYear);
             startActivity(intent);
             }
         });

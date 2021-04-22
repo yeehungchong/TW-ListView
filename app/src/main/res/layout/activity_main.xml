@@ -7,9 +7,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:text="Types of Public Holidays In SG"
-        android:textSize="25dp" />
+        android:text="DMSD Course Structure"
+        android:textSize="25dp"
+        android:layout_marginLeft="10dp"/>
 
     <ListView
         android:id="@+id/lvYear"
