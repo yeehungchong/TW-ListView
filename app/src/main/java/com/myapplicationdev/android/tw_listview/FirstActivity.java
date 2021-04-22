@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class FirstActivity extends AppCompatActivity {
 
     ListView lv;
-    ArrayList<String> al;
+    ArrayList<Year> al;
     ArrayAdapter<String> aa;
 
     @Override
@@ -19,8 +19,11 @@ public class FirstActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        al = new ArrayList<String>();
-        al.add("Year 1");
+        al = new ArrayList<Year>();
+        al.add(new Year("Year 1"));
+        al.add(new Year("Year 2"));
+        al.add(new Year("Year 3"));
+
 
 
 
