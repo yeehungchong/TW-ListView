@@ -3,20 +3,43 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
 
     <ImageView
-        android:id="@+id/ivProgram"
+        android:id="@+id/ivSecular1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="100dp" />
 
-    <TextView
-        android:id="@+id/tvModule"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_marginLeft="10dp"
-        android:layout_gravity="center"
-        android:textSize="20dp"/>
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvSecular1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:text="TextView"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/tvSecular2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:text="TextView"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+
 </LinearLayout>
